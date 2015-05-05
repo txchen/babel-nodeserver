@@ -1,5 +1,13 @@
 'use strict'
 
+import fetch from 'node-fetch'
+
+function promisify(r) {
+  return new Promise((resolve) => {
+      r.end(resolve)
+  })
+}
+
 export default {
   magic() {
     return 'es6'
@@ -7,5 +15,14 @@ export default {
 
   async fooTask() {
     return 'es7'
+  },
+
+  async isFromMainland() {
+    try {
+      var response = await fetch('http://ipservice.163.com/isFromMainland')
+      return await response.text()
+    } catch (ex) {
+      console.error(ex)
+    }
   }
 }
