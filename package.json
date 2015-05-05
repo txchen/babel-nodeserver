@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "br": "babel-node --harmony src/index.js"
+  },
+  "devDependencies": {
+    "babel": "^5.2.12",
+    "koa": "^0.20.0"
+  }
+}
