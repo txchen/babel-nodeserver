@@ -2,12 +2,6 @@
 
 import fetch from 'node-fetch'
 
-function promisify(r) {
-  return new Promise((resolve) => {
-      r.end(resolve)
-  })
-}
-
 export default {
   magic() {
     return 'es6'
