@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "server": "node --harmony src/index.js",
-    "watch": "nodemon --watch src -e js --harmony src/index.js"
+    "watch": "nodemon -V --watch src -e js --harmony src/index.js"
   },
   "devDependencies": {
     "babel": "^5.2.12",
