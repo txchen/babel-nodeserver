@@ -4,5 +4,6 @@ require("babel/register")
 // ES5 code here
 var server = require('./app')
 
-console.log('listen on http://localhost:8000')
-server.start()
+server.start(function () {
+    console.log('Server running at:', server.info.uri)
+})
