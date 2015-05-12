@@ -1,7 +1,5 @@
 'use strict'
 
-import fetch from 'node-fetch'
-
 function sleep(ms = 0) {
   return new Promise(r => setTimeout(r, ms))
 }
