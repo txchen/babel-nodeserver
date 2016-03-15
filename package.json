@@ -9,17 +9,17 @@
     "watch3": "nodemon -V --watch src3 -e js src3/index.js"
   },
   "devDependencies": {
-    "babel": "^5.2.12",
-    "nodemon": "^1.3.7"
+    "babel": "^6.5.2",
+    "nodemon": "^1.9.1"
   },
   "dependencies": {
-    "express": "^4.12.3",
-    "hapi": "^8.4.0",
-    "hapi-async-handler": "^1.0.2",
-    "koa": "^0.20.0",
-    "koa-route": "^2.4.1",
-    "morgan": "^1.5.2",
-    "node-fetch": "^1.2.1",
+    "express": "^4.13.4",
+    "hapi": "^13.2.1",
+    "hapi-async-handler": "^1.0.3",
+    "koa": "^1.2.0",
+    "koa-route": "^2.4.2",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.3.3",
     "wga": "^0.5.4"
   }
 }
