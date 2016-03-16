@@ -2,7 +2,7 @@
 
 import utils from './utils'
 import express from 'express'
-import wga from 'wga'
+import awrap from 'awrap'
 
 let router = express.Router()
 
@@ -12,8 +12,8 @@ router.use((req, res, next) => {
   next()
 })
 
-// async handler, wrap with wga
-router.get('/', wga(async (req, res) => {
+// async handler, wrap with awrap
+router.get('/', awrap(async (req, res) => {
   let userCount = await utils.getUserCount()
   res.send(`total user count: ${userCount}`)
 }))
